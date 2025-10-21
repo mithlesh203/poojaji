@@ -16,13 +16,11 @@ public class Utilities {
 		screenshotFilePath= "C:\\temp\\screenshot"+Utilities.timeStamp()+".png";
 		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(screenshotFile , new File(screenshotFilePath));
-		
 		return screenshotFilePath;
 	}
 	public static String timeStamp() {
 		Instant instant= Instant.now();
 		return instant.toString().replace("-","_").replace(":", "_").replace(".","_"); 
-
 	}
 
 }
