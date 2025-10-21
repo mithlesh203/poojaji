@@ -116,7 +116,6 @@ public class TestData {
 		}
 	}
 
-
 	public String getTestData(String TCID,String colName) {
 		String TCData;
 
@@ -127,10 +126,6 @@ public class TestData {
 		}else {
 			TCData= "TEST CASE ID NOT FOUND IN TCID COLUMN OF TEST DATA FILE";
 		}
-
 		return TCData;
-
-
 	}
-
 }
